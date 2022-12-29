@@ -4,10 +4,10 @@ import Contact from "./Contact";
 
 export default function Sections() {
     return (
-        <div>
+        <section className="info-col">
             <About />
             <Work />
             <Contact />
-        </div>
+        </section>
     );
 }
