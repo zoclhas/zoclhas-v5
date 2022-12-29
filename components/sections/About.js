@@ -16,11 +16,11 @@ export default function About() {
                     <div>
                         <p>
                             Hello! I am Zoclhas or Zoc. I design websites and
-                            textures. It has been over two years since I've
+                            textures. It has been over two years since I&apos;ve
                             start my work on both of these. I also do my own
                             designing for all of my projects.
                         </p>
-                        <p>Technologies I've worked with:</p>
+                        <p>Technologies I&apos;ve worked with:</p>
                         <div className="skills">
                             <ul>
                                 <li>HTML, CSS, JS</li>
