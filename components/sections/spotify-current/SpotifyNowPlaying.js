@@ -16,7 +16,6 @@ export const SpotifyNowPlaying = (props) => {
         });
     });
 
-    console.log(result);
     return (
         <div>
             {result.title !== undefined && result.isPlaying ? (
