@@ -1,7 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faArrowUpRightFromSquare,
-    faLink,
 } from "@fortawesome/free-solid-svg-icons";
 
 import { SpotifyNowPlaying } from "./spotify-current/SpotifyNowPlaying";
