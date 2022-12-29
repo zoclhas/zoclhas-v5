@@ -1,0 +1,83 @@
+:root {
+    --background: #0d0d0d;
+    --text: #fcf5e5;
+    --text-hover: #ffedc2;
+
+    --border-radius-lg: 20px;
+    --border-radius-xl: 30px;
+
+    --background-rgb: 13, 13, 13;
+    --text-rgb: 252, 245, 229;
+    --text-hover-rgb: 255, 237, 194;
+}
+
+@font-face {
+    font-family: Satoshi;
+    src: url("../fonts/Satoshi-Regular.ttf");
+}
+
+@font-face {
+    font-family: Synonym;
+    src: url(../fonts/Synonym-Regular.ttf);
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Satoshi;
+}
+
+body {
+    font-family: Synonym;
+    color: var(--text);
+
+    background: var(--background);
+
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: underline 0.05rem rgb(var(--text-rgb), 0.25);
+    transition: all 175ms;
+}
+
+a:hover {
+    color: var(--text-hover);
+    text-decoration-color: rgb(var(--text-hover-rgb), 1);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main > .container {
+    min-height: 300vh;
+
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr;
+}
+
+@media (max-width: 800px) {
+    main > .container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.spacer {
+    height: 20px;
+}
+
+.active a {
+    color: var(--text-hover);
+    font-weight: bold;
+}
