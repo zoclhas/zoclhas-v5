@@ -83,7 +83,11 @@ main > .container {
 }
 
 .spacer {
-    height: 20px;
+    height: 1.25rem;
+}
+
+.spacer-2xl {
+    height: 4rem;
 }
 
 .active a {
@@ -104,11 +108,15 @@ main > .container {
 }
 
 .card > .card-header {
-    background: rgba(var(--background-rgb), 0.5);
-    height: 100%;
+    background: rgba(var(--background-rgb), 0.3);
     padding: 1rem;
     padding-left: 1rem;
-    border-bottom: 1px solid rgba(var(--border-rgb), 0.1);
+}
+
+.card > .card-footer {
+    background: rgba(var(--background-rgb), 0.3);
+    padding: 1rem;
+    padding-left: 1rem;
 }
 
 .card > .card-body {
@@ -116,14 +124,21 @@ main > .container {
     font-size: 13.5pt;
 }
 
+#about .skills {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#about .fun {
+    display: grid;
+    grid-template-columns: 1.5fr 0.5fr;
+    gap: 1.25rem;
+}
+
 .card > .card-footer {
     padding-left: 1rem;
 
     border-top: rgba(var(--border-rgb), 0.25);
-}
-
-.card-spotify {
-    max-width: 30rem;
 }
 
 .card-spotify > .card-body {
@@ -153,6 +168,12 @@ main > .container {
     font-size: 11pt;
 }
 
+@media (max-width: 800px) {
+    #about .fun {
+        grid-template-columns: 1fr;
+    }
+}
+
 @media (max-width: 500px) {
     .card-spotify > .card-body {
         flex-direction: column;
@@ -160,5 +181,12 @@ main > .container {
 
     .card-spotify > .card-body > img {
         width: 100%;
+    }
+}
+
+@media (max-width: 430px) {
+    #about .skills {
+        flex-direction: column;
+        justify-content: flex-start;
     }
 }

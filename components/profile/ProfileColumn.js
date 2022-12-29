@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import Scrollspy from "react-scrollspy";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -19,54 +18,56 @@ export default function ProfileColumn() {
                     width={200}
                     alt="Profile Picture"
                 />
-                <h1>Zoclhas</h1>
+                <a href="/" className="no-underline">
+                    <h1>Zoclhas</h1>
+                </a>
                 <p>Web Dev | Material Artist</p>
                 <div className="spacer"></div>
                 <div className={profile.links}>
-                    <Link
+                    <a
                         href="https://github.com/zoclhas"
                         target="_blank"
                         rel="noreferrer"
                     >
                         <FontAwesomeIcon icon={faGithub} />
-                    </Link>
-                    <Link
+                    </a>
+                    <a
                         href="https://twitter.com/zoclhas"
                         target="_blank"
                         rel="noreferrer"
                     >
                         <FontAwesomeIcon icon={faTwitter} />
-                    </Link>
-                    <Link
+                    </a>
+                    <a
                         href="mailto:hi@zoclhas.com"
                         target="_blank"
                         rel="noreferrer"
                     >
                         <FontAwesomeIcon icon={faEnvelope} />
-                    </Link>
-                    <Link
+                    </a>
+                    <a
                         href="https://zochy.xyz"
                         target="_blank"
                         rel="noreferrer"
                     >
                         <FontAwesomeIcon icon={faLink} />
-                    </Link>
+                    </a>
                 </div>
                 <div className={profile.links} style={{ marginTop: "5px" }}>
-                    <Link
+                    <a
                         href="https://zocs.space"
                         target="_blank"
                         rel="noreferrer"
                     >
                         Blog
-                    </Link>
-                    <Link
+                    </a>
+                    <a
                         href="https://zaura.net"
                         target="_blank"
                         rel="noreferrer"
                     >
                         Zaura
-                    </Link>
+                    </a>
                 </div>
                 <div className="spacer"></div>
                 <Scrollspy
