@@ -1,13 +1,16 @@
 :root {
     --background: #0d0d0d;
     --background-2: #131313;
+    --background-3: #2c2c2c;
     --text: #fcf5e5;
     --text-hover: #ffedc2;
 
+    --border-radius-md: 14px;
     --border-radius-lg: 20px;
 
     --background-rgb: 13, 13, 13;
     --background-2-rgb: 19, 19, 19;
+    --background-3-rgb: 44, 44, 44;
     --text-rgb: 252, 245, 229;
     --text-hover-rgb: 255, 237, 194;
     --border-rgb: 255, 255, 255;
@@ -196,8 +199,58 @@ main > .container {
     font-size: 11pt;
 }
 
+.contact-methods {
+    display: flex;
+    gap: 1.25rem;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap: 1.25rem;
+}
+
+form > div {
+    width: 100%;
+}
+
+form label {
+    padding-left: 0.5rem;
+    font-size: 12pt;
+}
+
+input,
+textarea {
+    background: var(--background-3);
+    color: var(--text);
+
+    width: 90%;
+    padding: 1rem;
+
+    border: none;
+    border-radius: var(--border-radius-lg);
+}
+
+input {
+    height: 2rem;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+*:focus-visible {
+    outline: rgb(var(--text-rgb), 0.25) solid 1px;
+}
+
 @media (max-width: 800px) {
     #about .fun {
+        grid-template-columns: 1fr;
+    }
+
+    form {
         grid-template-columns: 1fr;
     }
 }
