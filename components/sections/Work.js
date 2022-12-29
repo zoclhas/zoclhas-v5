@@ -1,3 +1,5 @@
+"use client";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -29,7 +31,11 @@ export default function About() {
                 </div>
             </div>
             <div className="spacer"></div>
-            <div className={workcss["project-cards"]} data-more="hide">
+            <div
+                className={workcss["project-cards"]}
+                id="project-cards"
+                data-more="hide"
+            >
                 {works.map((work) => (
                     <div className="card" key={work.title}>
                         <div className={workcss["card-split"]}>

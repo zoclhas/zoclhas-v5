@@ -271,3 +271,11 @@ textarea {
         justify-content: flex-start;
     }
 }
+
+#project-cards[data-more="hide"] #show-less-btn {
+    display: none;
+}
+
+#project-cards[data-more="show"] #show-more-btn {
+    display: none;
+}
