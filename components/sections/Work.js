@@ -11,21 +11,14 @@ export default function About() {
     var hideButton;
     if (typeof document !== "undefined") {
         projectCards = document.querySelector("[data-more]");
-        showButton = document.getElementById("show-more-btn");
-        hideButton = document.getElementById("show-less-btn");
     }
-    hideButton.style.display = "none";
 
     const showProjectCards = () => {
         projectCards.setAttribute("data-more", "show");
-        showButton.style.display = "none";
-        hideButton.style.display = "block";
     };
 
     const hideProjectCards = () => {
         projectCards.setAttribute("data-more", "hide");
-        showButton.style.display = "block";
-        hideButton.style.display = "none";
     };
 
     return (
@@ -38,7 +31,7 @@ export default function About() {
             <div className="spacer"></div>
             <div className={workcss["project-cards"]} data-more="hide">
                 {works.map((work) => (
-                    <div className="card">
+                    <div className="card" key={work.title}>
                         <div className={workcss["card-split"]}>
                             <img
                                 src={`/${work.coverImage}`}

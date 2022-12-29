@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import Scrollspy from "react-scrollspy";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -18,9 +19,9 @@ export default function ProfileColumn() {
                     width={200}
                     alt="Profile Picture"
                 />
-                <a href="/" className="no-underline">
+                <Link href="/" className="no-underline">
                     <h1>Zoclhas</h1>
-                </a>
+                </Link>
                 <p>Web Dev | Material Artist</p>
                 <div className="spacer"></div>
                 <div className={profile.links}>

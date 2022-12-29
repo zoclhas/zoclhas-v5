@@ -14,6 +14,7 @@
 
 .card-split img {
     max-width: 100%;
+    pointer-events: none;
 }
 
 @media (max-width: 800px) {
@@ -21,3 +22,11 @@
         grid-template-columns: 1fr;
     }
 }
+
+.project-cards[data-more="hide"] #show-less-btn {
+    display: none;
+}
+
+/* .project-cards[data-more="show"] #show-more-btn {
+    display: none;
+} */
