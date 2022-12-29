@@ -1,24 +1,25 @@
 :root {
     --background: #0d0d0d;
+    --background-2: #131313;
     --text: #fcf5e5;
     --text-hover: #ffedc2;
 
     --border-radius-lg: 20px;
-    --border-radius-xl: 30px;
 
     --background-rgb: 13, 13, 13;
     --text-rgb: 252, 245, 229;
     --text-hover-rgb: 255, 237, 194;
+    --border-rgb: 255, 255, 255;
 }
 
 @font-face {
     font-family: Satoshi;
-    src: url("../fonts/Satoshi-Regular.ttf");
+    src: url("../fonts/Satoshi-Bold.ttf");
 }
 
 @font-face {
     font-family: Synonym;
-    src: url(../fonts/Synonym-Regular.ttf);
+    src: url("../fonts/Synonym-Regular.ttf");
 }
 
 html,
@@ -33,6 +34,12 @@ h4,
 h5,
 h6 {
     font-family: Satoshi;
+    font-weight: normal;
+    margin: 0;
+}
+
+h1 {
+    font-size: 32pt;
 }
 
 body {
@@ -55,14 +62,16 @@ a:hover {
     text-decoration-color: rgb(var(--text-hover-rgb), 1);
 }
 
+a.no-underline {
+    text-decoration-color: transparent;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
 }
 
 main > .container {
-    min-height: 300vh;
-
     display: grid;
     grid-template-columns: 0.5fr 1.5fr;
 }
@@ -80,4 +89,76 @@ main > .container {
 .active a {
     color: var(--text-hover);
     font-weight: bold;
+}
+
+.info-col {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.card {
+    background: var(--background-2);
+    border-radius: var(--border-radius-lg);
+}
+
+.card > .card-header {
+    background: rgba(var(--background-rgb), 0.5);
+    height: 100%;
+    padding: 1rem;
+    padding-left: 1rem;
+    border-bottom: 1px solid rgba(var(--border-rgb), 0.1);
+}
+
+.card > .card-body {
+    padding: 1rem;
+    font-size: 13.5pt;
+}
+
+.card > .card-footer {
+    padding-left: 1rem;
+
+    border-top: rgba(var(--border-rgb), 0.25);
+}
+
+.card-spotify {
+    max-width: 30rem;
+}
+
+.card-spotify > .card-body {
+    display: flex;
+    gap: 1rem;
+}
+
+.card-spotify > .card-body > img {
+    border-radius: var(--border-radius-lg);
+    pointer-events: none;
+
+    object-fit: cover;
+    width: 150px;
+    aspect-ratio: 1/1;
+}
+
+.card-spotify > .card-body > .card-spotify-info {
+    height: 150px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-spotify > .card-body > .card-spotify-info > p {
+    margin: 0;
+    font-size: 11pt;
+}
+
+@media (max-width: 500px) {
+    .card-spotify > .card-body {
+        flex-direction: column;
+    }
+
+    .card-spotify > .card-body > img {
+        width: 100%;
+    }
 }

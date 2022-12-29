@@ -4,11 +4,7 @@ import Scrollspy from "react-scrollspy";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTwitter, faGithub } from "@fortawesome/free-brands-svg-icons";
-import {
-    faEnvelope,
-    faLink,
-    faArrowUpRightFromSquare,
-} from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faLink } from "@fortawesome/free-solid-svg-icons";
 
 import profile from "../../styles/profile.module.css";
 import profilePicutre from "../../public/about-pfp.webp";
@@ -62,7 +58,7 @@ export default function ProfileColumn() {
                         target="_blank"
                         rel="noreferrer"
                     >
-                        Blog <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+                        Blog
                     </Link>
                     <Link
                         href="https://zaura.net"
@@ -70,7 +66,6 @@ export default function ProfileColumn() {
                         rel="noreferrer"
                     >
                         Zaura
-                        <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                     </Link>
                 </div>
                 <div className="spacer"></div>
