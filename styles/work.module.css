@@ -1,0 +1,23 @@
+.project-cards {
+    display: grid;
+    gap: 1.25rem;
+}
+
+.project-cards[data-more="hide"] > div:nth-child(n + 4) {
+    display: none;
+}
+
+.card-split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card-split img {
+    max-width: 100%;
+}
+
+@media (max-width: 800px) {
+    .card-split {
+        grid-template-columns: 1fr;
+    }
+}

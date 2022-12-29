@@ -7,6 +7,7 @@
     --border-radius-lg: 20px;
 
     --background-rgb: 13, 13, 13;
+    --background-2-rgb: 19, 19, 19;
     --text-rgb: 252, 245, 229;
     --text-hover-rgb: 255, 237, 194;
     --border-rgb: 255, 255, 255;
@@ -20,6 +21,10 @@
 @font-face {
     font-family: Synonym;
     src: url("../fonts/Synonym-Regular.ttf");
+}
+
+::selection {
+    background-color: rgb(var(--text-rgb), 0.25);
 }
 
 html,
@@ -66,6 +71,28 @@ a.no-underline {
     text-decoration-color: transparent;
 }
 
+button {
+    cursor: pointer;
+
+    background: var(--background-2);
+
+    font-family: Satoshi;
+    color: var(--text);
+    text-transform: uppercase;
+
+    padding: 1rem;
+
+    border-radius: var(--border-radius-lg);
+    border: none;
+
+    transition: all 150ms ease-in-out;
+}
+
+button:hover {
+    background: rgba(var(--background-2-rgb), 0.5);
+    color: var(--text-hover);
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -105,21 +132,22 @@ main > .container {
 .card {
     background: var(--background-2);
     border-radius: var(--border-radius-lg);
+    overflow: hidden;
 }
 
-.card > .card-header {
+.card .card-header {
     background: rgba(var(--background-rgb), 0.3);
     padding: 1rem;
     padding-left: 1rem;
 }
 
-.card > .card-footer {
+.card .card-footer {
     background: rgba(var(--background-rgb), 0.3);
     padding: 1rem;
     padding-left: 1rem;
 }
 
-.card > .card-body {
+.card .card-body {
     padding: 1rem;
     font-size: 13.5pt;
 }
