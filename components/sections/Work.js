@@ -61,6 +61,7 @@ export default function About() {
                                         <h2>{work.title}</h2>
                                         {work.isExternal && (
                                             <FontAwesomeIcon
+                                                style={{ width: "20px" }}
                                                 icon={faArrowUpRightFromSquare}
                                             />
                                         )}
@@ -74,6 +75,7 @@ export default function About() {
                                                 className="no-underline"
                                             >
                                                 <FontAwesomeIcon
+                                                    style={{ width: "30px" }}
                                                     icon={faGithub}
                                                 />
                                             </a>

@@ -66,6 +66,7 @@ export default function About() {
                             <h2>
                                 Blog &nbsp;
                                 <FontAwesomeIcon
+                                    style={{ width: "20px" }}   
                                     icon={faArrowUpRightFromSquare}
                                 />
                             </h2>
