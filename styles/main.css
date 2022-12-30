@@ -30,6 +30,24 @@
     background-color: rgb(var(--text-rgb), 0.25);
 }
 
+* {
+    scrollbar-width: auto;
+    scrollbar-color: var(--background-2) var(--background);
+}
+
+*::-webkit-scrollbar {
+    width: 9px;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--background);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--background-3);
+    border-radius: var(--border-radius-lg);
+}
+
 html,
 body {
     scroll-behavior: smooth;
