@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center">
+  <img alt="Logo" src="https://github.com/zoclhas/zoclhas-v5/blob/main/public/meta-img.png?raw=true" width="100" />
+</div>
+<h1 align="center">
+  zoclhas.com
+</h1>
+<p align="center">
+The official source code for my portfolio site.
+</p>
+<p align="center">
+<a href="https://github.com/zoclhas/zoclhas-website-v4">v4</a> <b>v5</b>
+</p>
 
-## Getting Started
+## Before Forking:
 
-First, run the development server:
+Yes you can fork this repo, and modify it for your personal site- **but you attribution is required.**
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+You can give the attribution by linking my website [zoclhas.com](https://zoclhas.com/) or linking to this [GitHub Page](https://github.com/zoclhas/zoclhas-v5)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Installation
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+1. Clone the repo
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+2. Install the dependencies
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+    ```sh
+    yarn
+    #or
+    npm i
+    ```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+3. Start the development server
 
-## Learn More
+    ```sh
+    yarn dev
+    #or
+    npm run dev
+    ```
 
-To learn more about Next.js, take a look at the following resources:
+4. Environment variables
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+    - Create a `.env` file.
+    - Add these keys and fill them with your own values.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+    ```env
+    NEXT_PUBLIC_SPOTIFY_CLIENT_ID =
+    NEXT_PUBLIC_SPOTIFY_CLIENT_SECRET =
+    NEXT_PUBLIC_SPOTIFY_REFRESH_TOKEN =
 
-## Deploy on Vercel
+    NEXT_PUBLIC_EMAIL_SERVICE_ID =
+    NEXT_PUBLIC_EMAIL_TEMPLATE_ID =
+    NEXT_PUBLIC_EMAIL_PUBLIC_KEY =
+    ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    - Get the values related to from EmailJS
+    - Upload it when hosting the site.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Publishing the site
+
+Host it on [Vercel](https://vercel.com/).
+
+&lt;3
