@@ -1,7 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-    faArrowUpRightFromSquare,
-} from "@fortawesome/free-solid-svg-icons";
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 
 import { SpotifyNowPlaying } from "./spotify-current/SpotifyNowPlaying";
 
@@ -17,8 +15,7 @@ export default function About() {
                         <p>
                             Hello! I am Zoclhas or Zoc. I design websites and
                             textures. It has been over two years since I&apos;ve
-                            start my work on both of these. I also do my own
-                            designing for all of my projects.
+                            start my work on both of these.
                         </p>
                         <p>Technologies I&apos;ve worked with:</p>
                         <div className="skills">

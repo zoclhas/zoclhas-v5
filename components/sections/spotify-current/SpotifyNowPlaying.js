@@ -18,7 +18,9 @@ export const SpotifyNowPlaying = (props) => {
 
     return (
         <div>
-            {result.title !== undefined && result.isPlaying ? (
+            {result.title !== undefined &&
+            result.isPlaying &&
+            result.albumImageUrl ? (
                 <div className="card card-spotify">
                     <div className="card-body">
                         <img

@@ -127,7 +127,6 @@ main > .container {
 
 .info-col {
     padding-top: 4rem;
-    padding-bottom: 4rem;
     padding-right: 1rem;
     padding-left: 1rem;
 }
@@ -295,4 +294,15 @@ form button:hover {
 
 #project-cards[data-more="show"] #show-more-btn {
     display: none;
+}
+
+footer {
+    background: var(--background-2);
+
+    text-align: center;
+
+    border-radius: var(--border-radius-lg) var(--border-radius-lg) 0 0;
+
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }

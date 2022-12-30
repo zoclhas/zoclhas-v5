@@ -17,7 +17,7 @@ export default function About() {
 
         const send = document.querySelector("[type='submit']");
         const name = document.querySelector("[name='user_name']");
-        const mail = document.querySelector("[name='email']");
+        const mail = document.querySelector("[name='user_email']");
         const text = document.querySelector("[name='message']");
 
         emailjs.sendForm(serviceId, templateId, form.current, publicKey).then(
@@ -82,7 +82,7 @@ export default function About() {
                             <label for="email">Email</label> <br />
                             <input
                                 type="email"
-                                name="email"
+                                name="user_email"
                                 placeholder="johndoe@example.com"
                                 required
                             />

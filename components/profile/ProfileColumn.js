@@ -29,6 +29,7 @@ export default function ProfileColumn() {
                         href="https://github.com/zoclhas"
                         target="_blank"
                         rel="noreferrer"
+                        style={{ width: "20px" }}
                     >
                         <FontAwesomeIcon icon={faGithub} />
                     </a>
@@ -36,6 +37,7 @@ export default function ProfileColumn() {
                         href="https://twitter.com/zoclhas"
                         target="_blank"
                         rel="noreferrer"
+                        style={{ width: "20px" }}
                     >
                         <FontAwesomeIcon icon={faTwitter} />
                     </a>
@@ -43,6 +45,7 @@ export default function ProfileColumn() {
                         href="mailto:hi@zoclhas.com"
                         target="_blank"
                         rel="noreferrer"
+                        style={{ width: "20px" }}
                     >
                         <FontAwesomeIcon icon={faEnvelope} />
                     </a>
@@ -50,6 +53,7 @@ export default function ProfileColumn() {
                         href="https://zochy.xyz"
                         target="_blank"
                         rel="noreferrer"
+                        style={{ width: "20px" }}
                     >
                         <FontAwesomeIcon icon={faLink} />
                     </a>
