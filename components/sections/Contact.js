@@ -70,7 +70,7 @@ export default function About() {
                 <div className="card-body">
                     <form ref={form} onSubmit={sendEmail}>
                         <div>
-                            <label for="user_name">Name</label> <br />
+                            <label htmlFor="user_name">Name</label> <br />
                             <input
                                 type="name"
                                 name="user_name"
@@ -79,7 +79,7 @@ export default function About() {
                             />
                             <br />
                             <div className="spacer"></div>
-                            <label for="email">Email</label> <br />
+                            <label htmlFor="email">Email</label> <br />
                             <input
                                 type="email"
                                 name="user_email"
@@ -88,7 +88,7 @@ export default function About() {
                             />
                         </div>
                         <div>
-                            <label for="message">Message</label>
+                            <label htmlFor="message">Message</label>
                             <textarea
                                 type="text"
                                 name="message"

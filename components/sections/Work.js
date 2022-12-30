@@ -9,18 +9,20 @@ import workcss from "../../styles/work.module.css";
 
 export default function About() {
     var projectCards;
-    var showButton;
-    var hideButton;
     if (typeof document !== "undefined") {
         projectCards = document.querySelector("[data-more]");
     }
 
     const showProjectCards = () => {
-        projectCards.setAttribute("data-more", "show");
+        if (projectCards) {
+            projectCards.setAttribute("data-more", "show");
+        }
     };
 
     const hideProjectCards = () => {
-        projectCards.setAttribute("data-more", "hide");
+        if (projectCards) {
+            projectCards.setAttribute("data-more", "hide");
+        }
     };
 
     return (
