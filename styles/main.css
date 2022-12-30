@@ -213,6 +213,11 @@ form {
 
 form > div {
     width: 100%;
+    min-height: 200px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 form label {
@@ -225,20 +230,32 @@ textarea {
     background: var(--background-3);
     color: var(--text);
 
-    width: 90%;
+    width: 100%;
     padding: 1rem;
+    box-sizing: border-box;
 
     border: none;
     border-radius: var(--border-radius-lg);
 }
 
 input {
-    height: 2rem;
+    height: 3rem;
 }
 
 textarea {
-    height: 100px;
+    height: 90px;
     resize: none;
+}
+
+form button {
+    background: var(--background-3);
+
+    width: 100%;
+    margin-top: 1.25rem;
+}
+
+form button:hover {
+    background-color: rgb(var(--background-3-rgb), 0.5);
 }
 
 *:focus-visible {

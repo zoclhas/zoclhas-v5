@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -15,17 +15,22 @@ export default function About() {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        const sendbtn = document.getElementById("send-btn");
-        const nameSBT = document.getElementById("name");
-        const mailSBT = document.getElementById("mail");
-        const textSBT = document.getElementById("text");
+        const send = document.querySelector("[type='submit']");
+        const name = document.querySelector("[name='user_name']");
+        const mail = document.querySelector("[name='email']");
+        const text = document.querySelector("[name='message']");
 
         emailjs.sendForm(serviceId, templateId, form.current, publicKey).then(
             (result) => {
                 console.log(result.text);
+                send.innerHTML = "Sent!";
+                name.value = "";
+                mail.value = "";
+                text.value = "";
             },
             (error) => {
                 console.log(error.text);
+                send.innerHTML = `Couldn't Send. ${error.text}`;
             }
         );
     };
