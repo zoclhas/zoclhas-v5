@@ -52,7 +52,7 @@ You can give the attribution by linking my website [zoclhas.com](https://zoclhas
     NEXT_PUBLIC_EMAIL_PUBLIC_KEY =
     ```
 
-    - Get the values related to from EmailJS
+    - Get the email values related from [EmailJS](https://www.emailjs.com/)
     - Upload it when hosting the site.
 
 ## Publishing the site
