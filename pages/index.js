@@ -3,17 +3,7 @@ import Head from "next/head";
 import ProfileColumn from "../components/profile/ProfileColumn";
 import Sections from "../components/sections/Sections";
 
-import { useContext } from "react";
-import { SmoothScrollContext } from "../contexts/SmoothScroll.context";
-
 export default function Home() {
-    const { scroll } = useContext(SmoothScrollContext);
-
-    const goToTop = (event) => {
-        event.preventDefault();
-        scroll && scroll.scrollTo(0);
-    };
-
     return (
         <>
             <Head>
@@ -44,10 +34,12 @@ export default function Home() {
                 />
                 <meta name="theme-color" content="#131313" />
             </Head>
-            <div className="container" data-scroll-section>
-                <ProfileColumn />
-                <Sections />
-            </div>
+            <main>
+                <div className="container">
+                    <ProfileColumn />
+                    <Sections />
+                </div>
+            </main>
         </>
     );
 }
