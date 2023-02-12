@@ -13,7 +13,7 @@ export const works = [
         title: "zaura.net",
         link: "https://zaura.net",
         description:
-            "Zaura is a professional studio creating high-quality resourepacks for Minecraft. It showcases pricing, downloads, updates, gallery. Made using NextJS & NextUI and Django serves as the backend.",
+            "Zaura is a professional studio creating high-quality resourepacks for Minecraft. Full stack website made using NextJS and Django.",
         github: null,
         isExternal: true,
     },
